@@ -1,0 +1,47 @@
+E' possibile iniziare una nuova partita (selezionando l'opzione New Game) o
+proseguire una vecchia partita precedentemente salvata (selezionando l'opzione Load).
+
+In entrambi i casi la partita seguira' le seguenti REGOLE:
+Per giocare a battaglia navale occorrono quattro tabelle (due per giocatore), tutte di uguali dimensioni (16x16).
+I quadretti della tabella sono identificati da coppie di coordinate, corrispondenti a riga e colonna;
+tradizionalmente si usano lettere per le colonne e numeri per le righe,
+percio' le celle saranno "A-1", "B-6", e cosi' via.
+I giocatori si accordano preliminarmente su quante navi disporre e di quali dimensioni.
+All'inizio, i giocatori devono "posizionare le proprie navi" segnandole su una delle loro due griglie
+(che terranno nascoste all'avversario per tutta la durata del gioco):
+- Una "nave" occupa un certo numero di quadretti adiacenti in linea retta (orizzontale o verticale) sulla tabella.
+- Due navi non possono toccarsi. Una volta posizionate le navi, il gioco procede a turni.
+Il giocatore di turno "spara un colpo" dichiarando un quadretto (per esempio, "B-5").
+L'avversario controlla sulla propria griglia se quella cella e' occupata da una sua nave.
+In caso affermativo risponde "colpito!" e marca quel quadretto sulla propria tabella;
+in caso negativo risponde "acqua" o "mancato".
+Sulla seconda tabella in dotazione i giocatori prendono nota dei colpi che hanno sparato e del loro esito.
+Quando un colpo centra l'ultimo quadretto di una nave non ancora affondata,
+il giocatore che subisce il colpo dovra' dichiarare "colpito e affondato!" e la nave si considera persa.
+Vince il giocatore che fa affondare tutte le navi dell'avversario per primo!
+
+NUMERO E DIMENSIONE DELLE NAVI:
+    5 tipi diversi:
+        1 nave da 5 caselle
+        2 navi da 4 caselle
+        3 navi da 3 caselle
+        4 navi da 2 caselle
+        5 navi da 1 casella
+    Per un totale di 15 navi.
+
+VARIANTI DEL GIOCO:
+    "Colpo a largo raggio", oltre alla casella indicata (ovvero la casella centrale)
+        ha effetto anche sulle caselle intorno (raggio 1 per un totale di 9 caselle).
+    "Bombardamento aereo", si indica una riga o una colonna
+        ha effetto su tutte le caselle della riga o colonna selezionata
+        (si sblocca a partire dal turno 10 del giocatore)
+    "Radar", e' in grado di scansionare 9 celle (raggio 1), bisogna specificare la casella centrale.
+
+LEGENDA:
+    ~ = mare aperto
+    * = nave alleata
+    X = nave nemica colpita
+    # = nave nemica affondata 
+    O = colpo mancato
+    - = radar vuoto
+    ! = radar nave nemica
