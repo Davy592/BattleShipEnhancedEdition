@@ -138,7 +138,6 @@ int leggereDimensioneStringa(stringa S){
 void copiareStringa(stringa D, stringa S){
 	int i;
 	if(S!=NULL){
-		D=(stringa)realloc(D, (leggereDimensioneStringa(S)+1)*sizeof(char));  //realloco della dimensione della sorgente +1 per il FINESTRINGA
 		i=1;
 		while(leggereCarattereStringa(S, i)!=FINESTRINGA){
 			scrivereCarattereStringa(D, i, leggereCarattereStringa(S, i));
