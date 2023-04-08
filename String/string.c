@@ -55,11 +55,11 @@ void deinizializzareStringa(stringa S){
  * Ritorna un carattere di una stringa
  *
  * INPUT
- * S – stringa di cui leggere un carattere – stringa
- * I – posizione del carattere da leggere – numerico - intero
+ * S â€“ stringa di cui leggere un carattere â€“ stringa
+ * I â€“ posizione del carattere da leggere â€“ numerico - intero
  *
  * OUTPUT
- * C – carattere in posizione i di S - carattere
+ * C â€“ carattere in posizione i di S - carattere
  *
  * LAVORO
  *
@@ -78,12 +78,12 @@ char leggereCarattereStringa(stringa S, int i){
  * Modifica un carattere di una stringa
  *
  * INPUT
- * S – stringa di cui modificare un carattere – stringa
- * I – posizione del carattere da modificare – numerico – intero
- * C – carattere da inserire in posizione i di S - carattere
+ * S â€“ stringa di cui modificare un carattere â€“ stringa
+ * I â€“ posizione del carattere da modificare â€“ numerico â€“ intero
+ * C â€“ carattere da inserire in posizione i di S - carattere
  *
  * OUTPUT
- * S – stringa con il carattere in posizione i modificato - stringa
+ * S â€“ stringa con il carattere in posizione i modificato - stringa
  *
  * LAVORO
  *
@@ -100,10 +100,10 @@ void scrivereCarattereStringa(stringa S, int i, char c){
  * Ritorna la lunghezza di una stringa
  *
  * INPUT
- * S – stringa di cui leggere la dimensione - stringa
+ * S â€“ stringa di cui leggere la dimensione - stringa
  *
  * OUTPUT
- * Dim – dimensione di S – numerico – intero>=0
+ * Dim â€“ dimensione di S â€“ numerico â€“ intero>=0
  *
  * LAVORO
  *
@@ -125,20 +125,19 @@ int leggereDimensioneStringa(stringa S){
  * Copia il contenuto di una stringa dentro un'altra
  *
  * INPUT
- * D – dove copiare la stringa S (destinazione) - stringa
- * S – stringa da copiare (sorgente) – stringa
+ * D â€“ dove copiare la stringa S (destinazione) - stringa
+ * S â€“ stringa da copiare (sorgente) â€“ stringa
  *
  * OUTPUT
- * D – stringa dopo la copia di S - stringa
+ * D â€“ stringa dopo la copia di S - stringa
  *
  * LAVORO
- * I – indice per scandire i caratteri di S – numerico - intero
+ * I â€“ indice per scandire i caratteri di S â€“ numerico - intero
  */
 
 void copiareStringa(stringa D, stringa S){
 	int i;
 	if(S!=NULL){
-		D=(stringa)realloc(D, (leggereDimensioneStringa(S)+1)*sizeof(char));  //realloco della dimensione della sorgente +1 per il FINESTRINGA
 		i=1;
 		while(leggereCarattereStringa(S, i)!=FINESTRINGA){
 			scrivereCarattereStringa(D, i, leggereCarattereStringa(S, i));
@@ -155,14 +154,14 @@ void copiareStringa(stringa D, stringa S){
  * Accoda un singolo carattere ad una stringa
  *
  * INPUT
- * S – stringa a cui accodare un carattere – stringa
- * c – carattere da accodare a S - carattere
+ * S â€“ stringa a cui accodare un carattere â€“ stringa
+ * c â€“ carattere da accodare a S - carattere
  *
  * OUTPUT
- * S – stringa con carattere accodato - stringa
+ * S â€“ stringa con carattere accodato - stringa
  *
  * LAVORO
- * N – lunghezza di S – numerico – intero>=0
+ * N â€“ lunghezza di S â€“ numerico â€“ intero>=0
  */
 
 void accodareCarattereStringa(stringa S, char c){
@@ -180,14 +179,14 @@ void accodareCarattereStringa(stringa S, char c){
  * Concatena due stringhe (di fatto accoda il contenuto della seconda stringa alla prima)
  *
  * INPUT
- * D – stringa a cui concatenarne un'altra (destinazione) – stringa
- * S – stringa da concatenare a D (sorgente) - stringa
+ * D â€“ stringa a cui concatenarne un'altra (destinazione) â€“ stringa
+ * S â€“ stringa da concatenare a D (sorgente) - stringa
  *
  * OUTPUT
- * D – stringa dopo la concatenazione con S - stringa
+ * D â€“ stringa dopo la concatenazione con S - stringa
  *
  * LAVORO
- * I – indice per scandire i caratteri di S – numerico – intero>0
+ * I â€“ indice per scandire i caratteri di S â€“ numerico â€“ intero>0
  */
 
 void concatenareStringa(stringa D, stringa S){
