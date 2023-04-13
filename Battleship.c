@@ -1,12 +1,12 @@
 /*
  ===================================================================================================
  Name        : Battleship Project
- Group		 : 24
+ Group	     : 24
  Author      : Cirilli Davide
  Description : Progetto d'esame per "Laboratorio di Informatica".
- 	 	 	   Gioco della Battaglia Navale su console testuale, con regole e dinamiche modificate e migliorate.
- Note		 : Per quanto riguarda il modulo help Ë necessario copiare e incollare il file "Regole.txt" nel percorso "C:\Battleship".
- 	 	 	   Suddetto percorso verr‡ generato automaticamente alla prima esecuzione del codice
+ 	               Gioco della Battaglia Navale su console testuale, con regole e dinamiche modificate e migliorate.
+ Note	     : Per quanto riguarda il modulo help √® necessario copiare e incollare il file "Regole.txt" nel percorso "C:\Battleship".
+ 	               Suddetto percorso verr√† generato automaticamente alla prima esecuzione del codice
  ===================================================================================================
 */
 
@@ -29,12 +29,12 @@
  * OUTPUT
  *
  * LAVORO
- * Scelta ñ opzione scelta nel menu principale ñ numerico ñ 1<=intero<=4
- * Rip ñ indica se devo ristampare il menu (dopo help) ñ booleano ñ FALSO=non ripetere, VERO=ripeti
- * P ñ giocatori che giocheranno la partita ñ array monodimensionale di giocatori statico
- * Esci ñ indica se Ë stata scelta líopzione ìesciî ñ booleano ñ FALSO=non esci, VERO=esci
- * Vincitore ñ indica il giocatore che ha vinto la partita (-1 se partita non completa) ñ numerico ñ intero
- * Nome ñ nome del giocatore che ha vinto la partita - stringa
+ * Scelta ‚Äì opzione scelta nel menu principale ‚Äì numerico ‚Äì 1<=intero<=4
+ * Rip ‚Äì indica se devo ristampare il menu (dopo help) ‚Äì booleano ‚Äì FALSO=non ripetere, VERO=ripeti
+ * P ‚Äì giocatori che giocheranno la partita ‚Äì array monodimensionale di giocatori statico
+ * Esci ‚Äì indica se √® stata scelta l‚Äôopzione ‚Äúesci‚Äù ‚Äì booleano ‚Äì FALSO=non esci, VERO=esci
+ * Vincitore ‚Äì indica il giocatore che ha vinto la partita (-1 se partita non completa) ‚Äì numerico ‚Äì intero
+ * Nome ‚Äì nome del giocatore che ha vinto la partita - stringa
  */
 
 int main() {
@@ -68,7 +68,7 @@ int main() {
 			fflush(stdin);
 			getchar();
 		}
-	}while(leggereTurno(p[0])==-1 || rip==VERO);  //finchË non ci sono pi˘ errori
+	}while(leggereTurno(p[0])==-1 || rip==VERO);  //finch√® non ci sono pi√π errori
 	//sono sicuro di avere tutti i dati necessari alla partita
 	if(esci==FALSO){
 		vincitore=gioca(p);
